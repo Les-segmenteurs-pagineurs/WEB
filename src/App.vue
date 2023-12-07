@@ -4,18 +4,17 @@
             <img src="../src/assets/recyclingIcon.png" alt="recycling Icon">
             <ul>
                 <li>
-                    <RouterLink to="/">HOME</RouterLink>
-                </li>
-                <li>
-                    <RouterLink to="">APPRENDRE</RouterLink>
+                    <RouterLink to="/">APPRENDRE</RouterLink>
                 </li>
                 <li>
                     <RouterLink to="">QUIZ</RouterLink>
                 </li>
                 <li>
-                    <RouterLink to="/user/account"><img class="account" src="../src/assets/accountIcon.png"></RouterLink>
+                    <RouterLink to="">SOURCESCHECKER</RouterLink>
                 </li>
             </ul>
+            <RouterLink to="/user/account" style="display: inline-block; width: auto;"><img class="account"
+                    src="../src/assets/accountIcon.png"></RouterLink>
         </nav>
     </header>
 
@@ -32,8 +31,8 @@ import { RouterLink, RouterView } from 'vue-router'
 * {
     height: 100%;
     width: 100%;
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     font-family: Avenir, sans-serif;
 }
 
@@ -45,8 +44,10 @@ img {
 
 .account {
     margin-left: 0;
-    width: 13%;
+    padding: 0.5rem 0 0 0.5rem;
+    width: 50%;
     height: 13%;
+    border: 0;
 }
 
 nav {
@@ -93,8 +94,6 @@ nav a {
     color: white;
     font-weight: 900;
     font-size: 2rem;
-    border-bottom: 2px solid transparent;
-    padding: 10px 0px;
 }
 
 .conteneur {
