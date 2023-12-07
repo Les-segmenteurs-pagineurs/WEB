@@ -3,9 +3,18 @@
         <nav>
             <img src="../src/assets/recyclingIcon.png" alt="recycling Icon">
             <ul>
-                <li><a href="#">ACCUEIL</a></li>
-                <li><a href="#">APPRENDRE</a></li>
-                <li><a href="#">QUIZZ</a></li>
+                <li>
+                    <RouterLink to="/">HOME</RouterLink>
+                </li>
+                <li>
+                    <RouterLink to="">APPRENDRE</RouterLink>
+                </li>
+                <li>
+                    <RouterLink to="">QUIZZ</RouterLink>
+                </li>
+                <li>
+                    <RouterLink to="/user/account"><img class="account" src="../src/assets/accountIcon.png"></RouterLink>
+                </li>
             </ul>
         </nav>
     </header>
@@ -34,8 +43,14 @@ img {
     height: 3%;
 }
 
+.account {
+    width: 17%;
+    height: 17%;
+}
+
 nav {
     width: 100%;
+    background-color: black;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -46,7 +61,13 @@ nav {
 nav ul {
     display: flex;
     justify-content: space-around;
+    align-items: center;
     list-style-type: none;
+}
+
+nav ul a {
+    margin: none;
+    padding: none;
 }
 
 nav ul li {
