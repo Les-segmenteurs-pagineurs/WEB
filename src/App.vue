@@ -50,6 +50,7 @@ img {
 
 nav {
     width: 100%;
+    background-color: black;
     display: flex;
     flex-direction: row;
     align-items: center;
