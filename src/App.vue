@@ -10,7 +10,7 @@
                     <RouterLink to="">APPRENDRE</RouterLink>
                 </li>
                 <li>
-                    <RouterLink to="">QUIZZ</RouterLink>
+                    <RouterLink to="">QUIZ</RouterLink>
                 </li>
                 <li>
                     <RouterLink to="/user/account"><img class="account" src="../src/assets/accountIcon.png"></RouterLink>
@@ -44,8 +44,9 @@ img {
 }
 
 .account {
-    width: 17%;
-    height: 17%;
+    margin-left: 0;
+    width: 14%;
+    height: 14%;
 }
 
 nav {
@@ -66,8 +67,9 @@ nav ul {
 }
 
 nav ul a {
-    margin: none;
-    padding: none;
+    margin: 0;
+    padding: 0;
+    border: 0;
 }
 
 nav ul li {
