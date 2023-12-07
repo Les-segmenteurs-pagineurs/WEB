@@ -45,8 +45,8 @@ img {
 
 .account {
     margin-left: 0;
-    width: 14%;
-    height: 14%;
+    width: 13%;
+    height: 13%;
 }
 
 nav {
@@ -68,7 +68,7 @@ nav ul {
 
 nav ul a {
     margin: 0;
-    padding: 0;
+    padding: 0.5rem;
     border: 0;
 }
 
