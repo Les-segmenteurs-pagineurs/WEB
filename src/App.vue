@@ -1,18 +1,10 @@
 <template>
     <header>
         <nav>
-            <img src="../src/assets/recyclingIcon.png" alt="recycling Icon">
-            <ul>
-                <li>
-                    <RouterLink to="/">APPRENDRE</RouterLink>
-                </li>
-                <li>
-                    <RouterLink to="">QUIZ</RouterLink>
-                </li>
-                <li>
-                    <RouterLink to="">SOURCESCHECKER</RouterLink>
-                </li>
-            </ul>
+            <RouterLink to="/"><img class="logo" src="../src/assets/recyclingIcon.png" alt="recycling Icon"></RouterLink>
+            <RouterLink to="/">APPRENDRE</RouterLink>
+            <RouterLink to="">QUIZ</RouterLink>
+            <RouterLink to="/sourceschecker">SOURCESCHECKER</RouterLink>
             <RouterLink to="/user/account" style="display: inline-block; width: auto;"><img class="account"
                     src="../src/assets/accountIcon.png"></RouterLink>
         </nav>
@@ -28,7 +20,7 @@ import { RouterLink, RouterView } from 'vue-router'
 
 <style scoped>
 /*Reset CSS*/
-* {
+html {
     height: 100%;
     width: 100%;
     margin: 0;
@@ -36,10 +28,21 @@ import { RouterLink, RouterView } from 'vue-router'
     font-family: Avenir, sans-serif;
 }
 
-img {
+header {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    width: 100vw;
+}
+
+body {
+    margin: 0;
+}
+
+.logo {
     margin-left: 1rem;
-    width: 3%;
-    height: 3%;
+    width: 55%;
+    height: 55%;
 }
 
 .account {
@@ -52,38 +55,12 @@ img {
 
 nav {
     width: 100%;
-    background-color: black;
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
     align-items: center;
     margin: 0 auto;
     top: 0px;
-}
-
-nav ul {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    list-style-type: none;
-}
-
-nav ul a {
-    margin: 0;
-    padding: 0.5rem;
-    border: 0;
-}
-
-nav ul li {
-    float: left;
-    width: 25%;
-    text-align: center;
-    position: relative;
-}
-
-nav ul::after {
-    content: "";
-    display: table;
-    clear: both;
 }
 
 nav a {
@@ -94,10 +71,5 @@ nav a {
     color: white;
     font-weight: 900;
     font-size: 2rem;
-}
-
-.conteneur {
-    margin: 50px 20px;
-    height: 1500px;
 }
 </style>
