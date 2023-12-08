@@ -1,13 +1,19 @@
 <template>
-    <main>
-        <div class="main">
-            <div class="question" v-for="(item, id) in faq" :key="id" :id="id">
-                <h3>{{ item.question }}</h3>
-                <br>
-                <p>{{ item.answer }}</p>
+    <html>
+
+    <body>
+        <main>
+            <div class="main">
+                <div class="question" v-for="(item, id) in faq" :key="id" :id="id">
+                    <h3>{{ item.question }}</h3>
+                    <br>
+                    <p>{{ item.answer }}</p>
+                </div>
             </div>
-        </div>
-    </main>
+        </main>
+    </body>
+
+    </html>
 </template>
 
 <script>
@@ -122,8 +128,14 @@ export default {
 </script>
 
 <style>
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
 main {
-    padding-top: 3%;
+    padding-top: 15vh;
     color: black;
 }
 

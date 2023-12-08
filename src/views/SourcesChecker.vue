@@ -1,11 +1,17 @@
 <template>
-    <div class="wrapper_view">
-        <h1>Vos sources sont-elles fiables ?</h1>
-        <div class="sources_checker">
-            <img class="search_icon" src="../assets/searchIcon.png" alt="searchIcon">
-            <input type="text" placeholder="Entrez votre lien..." class="transparent-input">
+    <html>
+
+    <body>
+        <div class="wrapper_view">
+            <h1>Vos sources sont-elles fiables ?</h1>
+            <div class="sources_checker">
+                <img class="search_icon" src="../assets/searchIcon.png" alt="searchIcon">
+                <input type="text" placeholder="Entrez votre lien..." class="transparent-input">
+            </div>
         </div>
-    </div>
+    </body>
+
+    </html>
 </template>
 
 <script>
@@ -20,6 +26,12 @@ export default {
 </script>
 
 <style>
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
 .wrapper_view {
     display: flex;
     justify-content: center;

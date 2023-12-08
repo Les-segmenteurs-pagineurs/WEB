@@ -1,18 +1,25 @@
 <template>
-    <header>
-        <nav>
-            <RouterLink to="/"><img class="logo" src="../src/assets/recyclingIcon.png" alt="recycling Icon"></RouterLink>
-            <RouterLink to="/">APPRENDRE</RouterLink>
-            <RouterLink to="">QUIZ</RouterLink>
-            <RouterLink to="/sourceschecker">SOURCESCHECKER</RouterLink>
-            <RouterLink to="/user/account" style="display: inline-block; width: auto;"><img class="account"
-                    src="../src/assets/accountIconBlack.png"></RouterLink>
-        </nav>
-    </header>
+    <html>
 
-    <div>
-        <RouterView />
-    </div>
+    <body>
+        <header>
+            <nav>
+                <RouterLink to="/"><img class="logo" src="../src/assets/recyclingIcon.png" alt="recycling Icon">
+                </RouterLink>
+                <RouterLink to="/">APPRENDRE</RouterLink>
+                <RouterLink to="quiz">QUIZ</RouterLink>
+                <RouterLink to="/sourceschecker">SOURCESCHECKER</RouterLink>
+                <RouterLink to="/user/account" style="display: inline-block; width: auto;"><img class="account"
+                        src="../src/assets/accountIconBlack.png"></RouterLink>
+            </nav>
+        </header>
+
+        <div>
+            <RouterView />
+        </div>
+    </body>
+
+    </html>
 </template>
 
 
@@ -25,9 +32,6 @@ import { RouterLink, RouterView } from 'vue-router'
 html {
     margin: 0;
     padding: 0;
-    height: 100%;
-    width: 100%;
-    font-family: Avenir, sans-serif;
 }
 
 body {
