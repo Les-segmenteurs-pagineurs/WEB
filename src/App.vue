@@ -8,6 +8,10 @@
                 <li><a href="#">QUIZZ</a></li>
             </ul>
         </nav>
+        <div class="container">
+            <PlayerPlacement/>
+        </div>
+        
     </header>
 
     <RouterView />
@@ -16,6 +20,8 @@
 
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
+import PlayerPlacement from '@/component/PlayerPlacement.vue'
+
 </script>
 
 <style scoped>
