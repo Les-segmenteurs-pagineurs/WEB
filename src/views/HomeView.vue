@@ -1,23 +1,11 @@
 <template>
     <main>
-        <div class="gauche">
-            <nav>
-                <ul>
-                    <li v-for="(item, id) in faq" :key="id">
-                        <a :href="'#' + id">{{ item.question }}</a>
-                        <br><br><br>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-        <div class="droite">
-            <ul>
-                <li v-for="(item, id) in faq" :key="id" :id="id">
-                    <h3>{{ item.question }}</h3>
-                    <p>{{ item.answer }}</p>
-                    <br>
-                </li>
-            </ul>
+        <div class="main">
+            <div class="question" v-for="(item, id) in faq" :key="id" :id="id">
+                <h3>{{ item.question }}</h3>
+                <br>
+                <p>{{ item.answer }}</p>
+            </div>
         </div>
     </main>
 </template>
@@ -135,46 +123,36 @@ export default {
 
 <style>
 main {
+    padding-top: 3%;
+    color: black;
+}
+
+.main {
     display: flex;
-    padding-top: 2%;
-    color: white;
-    background-color: #2c2f33;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 2rem;
 }
 
-.gauche,
-.droite {
-    /* Répartit la largeur en deux colonnes égales */
-    padding: 20px;
-    box-sizing: border-box;
-}
-
-.gauche {
-    width: 20%;
-}
-
-.gauche a {
-    font-size: 1.5rem;
-    font-weight: 900;
-    text-decoration: none;
-    color: white;
-    list-style-type: none;
-}
-
-.gauche ul li {
-    text-decoration: none;
-}
-
-.droite {
-    font-size: 1.5rem;
-    width: 80%;
+.question {
+    background-color: #CCCCCC;
+    border: 1px solid black;
+    border-radius: 0.5rem;
+    max-width: 20%;
+    margin: 0 0 1rem 1rem;
+    padding: 1rem;
 }
 
 p {
+    font-weight: 400;
     margin: 0;
 }
 
 h3 {
-    margin-bottom: 0.1rem;
+    font-weight: 900;
+    font-size: x-large;
+    margin: 0;
 }
 
 ul {
