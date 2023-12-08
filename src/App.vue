@@ -6,7 +6,7 @@
             <RouterLink to="">QUIZ</RouterLink>
             <RouterLink to="/sourceschecker">SOURCESCHECKER</RouterLink>
             <RouterLink to="/user/account" style="display: inline-block; width: auto;"><img class="account"
-                    src="../src/assets/accountIcon.png"></RouterLink>
+                    src="../src/assets/accountIconBlack.png"></RouterLink>
         </nav>
     </header>
 
@@ -76,7 +76,7 @@ nav a {
     justify-content: space-around;
     align-items: center;
     text-decoration: none;
-    color: white;
+    color: black;
     font-weight: 900;
     font-size: 2rem;
 }
