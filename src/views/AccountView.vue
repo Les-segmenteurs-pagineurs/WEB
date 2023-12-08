@@ -7,9 +7,13 @@
         <!-- Autres détails de l'utilisateur selon votre modèle -->
         <div id="change_password"></div>
       </div>
+    
       <div v-else>
         <p>Aucun utilisateur connecté.</p>
       </div>
+      <router-link to="/user/add_account">Addaccount</router-link>
+      <br>
+      <router-link to="/user/del_account">Delaccount</router-link>
     </div>
 
     <div id="history_quizz">
@@ -74,7 +78,7 @@ export default {
 
 #user_name {
   align-items: center;
-  background: #bz; /* Bleu */
+  background: #aaa; /* Bleu */
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
