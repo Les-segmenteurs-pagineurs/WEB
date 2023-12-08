@@ -10,7 +10,9 @@
         </nav>
     </header>
 
-    <RouterView />
+    <div>
+        <RouterView />
+    </div>
 </template>
 
 
@@ -21,11 +23,16 @@ import { RouterLink, RouterView } from 'vue-router'
 <style scoped>
 /*Reset CSS*/
 html {
-    height: 100%;
-    width: 100%;
     margin: 0;
     padding: 0;
+    height: 100%;
+    width: 100%;
     font-family: Avenir, sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
 }
 
 header {
@@ -33,6 +40,7 @@ header {
     flex-direction: column;
     position: fixed;
     width: 100vw;
+    height: 15vh;
 }
 
 body {

@@ -69,7 +69,7 @@ h1 {
 }
 
 .transparent-input::placeholder {
-    color: white;
+    color: #bcc1c5;
 }
 
 .transparent-input:focus {

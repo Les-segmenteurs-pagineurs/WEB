@@ -5,6 +5,7 @@
                 <ul>
                     <li v-for="(item, id) in faq" :key="id">
                         <a :href="'#' + id">{{ item.question }}</a>
+                        <br><br><br>
                     </li>
                 </ul>
             </nav>
@@ -14,6 +15,7 @@
                 <li v-for="(item, id) in faq" :key="id" :id="id">
                     <h3>{{ item.question }}</h3>
                     <p>{{ item.answer }}</p>
+                    <br>
                 </li>
             </ul>
         </div>
@@ -134,6 +136,9 @@ export default {
 <style>
 main {
     display: flex;
+    padding-top: 2%;
+    color: white;
+    background-color: #2c2f33;
 }
 
 .gauche,
@@ -148,8 +153,10 @@ main {
 }
 
 .gauche a {
+    font-size: 1.5rem;
+    font-weight: 900;
     text-decoration: none;
-    color: black;
+    color: white;
     list-style-type: none;
 }
 
@@ -158,7 +165,16 @@ main {
 }
 
 .droite {
+    font-size: 1.5rem;
     width: 80%;
+}
+
+p {
+    margin: 0;
+}
+
+h3 {
+    margin-bottom: 0.1rem;
 }
 
 ul {
